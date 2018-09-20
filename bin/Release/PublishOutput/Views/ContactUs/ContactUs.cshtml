@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "CashOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Fill the Form Below</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control border-input" id="FullName" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone No</label>
+                                        <input type="number" class="form-control border-input" id="Phone" placeholder="">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea rows="5" class="form-control border-input" id="Message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" id="Submit" class="btn btn-info btn-fill btn-wd">Submit</button>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+   $(document).ready(function () {
+       $("#Submit").click(function () {
+
+
+
+
+           $.ajax({
+               url: "/Contactus/SaveContact",
+               type: "POST",
+               data: {
+
+                   FullName: $("#FullName").val(),
+                   Phone: $("#Phone").val(),
+                   Message: $("#Message").val(),
+                  
+               },
+               dataType: "'application/json",
+               success: successFunc,
+               error: errorFunc,
+           });
+           function successFunc(data, status) {
+               alert("ready to submit");
+           }
+
+           function errorFunc() {
+               alert('Error');
+           }
+
+       });
+   });
+    
+
+</script>

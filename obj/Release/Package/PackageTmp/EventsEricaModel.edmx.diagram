@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b225871dfc3b4d5a9e0bf21f44a5bd0f" Name="Diagram1">
+        <EntityTypeShape EntityType="GtTestEEModel.AdminBooking" Width="1.5" PointX="8.25" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AdminFeedback" Width="1.5" PointX="3" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AdminLogin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AdminPayment" Width="1.5" PointX="13.5" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AffiliateCashOut" Width="1.5" PointX="6" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AffiliateContactU" Width="1.5" PointX="6" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AffiliateRegister" Width="1.5" PointX="3.75" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.AffiliateUserDetail" Width="1.5" PointX="6" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserBankDetail" Width="1.5" PointX="3" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserCategory" Width="1.5" PointX="3" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserContactu" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserCustomer" Width="1.5" PointX="8.25" PointY="37.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserDateTime" Width="1.5" PointX="5.25" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserDiscount" Width="1.5" PointX="8.25" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserEvent" Width="1.5" PointX="3" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserEventCategory" Width="1.5" PointX="5.25" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserEventView" Width="1.5" PointX="5.25" PointY="45.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserGSTDetail" Width="1.5" PointX="3" PointY="59.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserImage" Width="1.5" PointX="5.25" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserLead" Width="1.5" PointX="11.25" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserRegister" Width="1.5" PointX="0.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserReview" Width="1.5" PointX="8.25" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserSale" Width="1.5" PointX="11.25" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserSubscription" Width="1.5" PointX="5.25" PointY="63.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserTax" Width="1.5" PointX="5.25" PointY="66.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserTeam" Width="1.5" PointX="3" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.OrganiserVenue" Width="1.5" PointX="5.25" PointY="69.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserContact" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserCorporate" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserLike" Width="1.5" PointX="5.25" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserRegister" Width="1.5" PointX="6" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserShare" Width="1.5" PointX="5.25" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserSubscribe" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GtTestEEModel.UserView" Width="1.5" PointX="6" PointY="57.625" IsExpanded="true" />
+        <AssociationConnector Association="GtTestEEModel.FK__AdminBook__Event__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__AdminBook__Usern__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__AdminPaym__Booki__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__AdminFeed__Usern__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__AdminPaym__Usern__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Affiliate__Affil__607251E5" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Affiliate__Affil__5D95E53A" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Affiliate__Affil__5AB9788F" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__UserRegis__Affil__72910220" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__UserView__Affili__7D0E9093" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Categ__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__0D44F85C" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__6DCC4D03" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Event__7FEAFD3E" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__UserLike__EventI__719CDDE7" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__UserShare__Event__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__0C50D423" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Usern__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__Organiser__Email__6CD828CA" ManuallyRouted="false" />
+        <AssociationConnector Association="GtTestEEModel.FK__UserLike__EmailI__70A8B9AE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

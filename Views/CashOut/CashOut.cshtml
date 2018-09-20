@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "CashOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">CashOut</h4>
+                    </div>
+                    <div class="content">
+                        <form name="CashoutForm" method="post">
+                            <div class="form-group">
+                                <label style="color:red;font-size:20px;font-weight:600" id="invalidInput" name="invalidInput"></label>
+                            </div>
+                            @if (ViewBag.Message != null)
+                            {
+                                <div class="form-group">
+                                    <label style="color:red;font-size:20px;font-weight:600">@ViewBag.Message</label>
+                                </div>
+                            }
+                            @if (ViewBag.SuccessMessage != null)
+                            {
+                                <div class="form-group">
+                                    <label style="color:#81f381;font-size:20px;font-weight:600">@ViewBag.SuccessMessage</label>
+                                </div>
+                            }
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Account Holder</label>
+                                            <input type="text" id="AccountHolder" name="AccountHolder" class="form-control border-input" onkeydown="return ((event.keyCode >= 65 && event.keyCode <= 120) || (event.keyCode == 32) || (event.keyCode == 8) || (event.keyCode == 9) || (event.keyCode == 37) || (event.keyCode == 38) || (event.keyCode == 39)); ">
+                                        </div>
+                                    </div>
+                                    @*<div class="col-md-6">
+                    <div class="form-group">
+                        <label>Account Number</label>
+                        <input type="text" class="form-control border-input" placeholder="201483587">
+                    </div>
+                </div>*@
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Account Number</label>
+                                            <input type="text" id="AccountNo" name="AccountNo" class="form-control border-input" onkeypress="return isNumber(event)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Confirm Account Number</label>
+                                            <input type="text" id="ConfirmAccountNo" name="ConfirmAccountNo" class="form-control border-input" onkeypress="return isNumber(event)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>IFSC</label>
+                                            <input type="text" id="IFSC" name="IFSC" class="form-control border-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Amount</label>
+                                            <input type="text" id="Amount" name="Amount" class="form-control border-input" onkeypress="return isNumber(event)">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" id="Submit" class="btn btn-info btn-fill btn-wd">Cash Out</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+    $('form').submit(function () {
+        // Get the Login Name value and trim it
+        var AccountHolder = $.trim($('#AccountHolder').val());
+        var AccountNo = $.trim($('#AccountNo').val());
+        var ConfirmAccountNo = $.trim($('#ConfirmAccountNo').val());
+        var IFSC = $.trim($('#IFSC').val());
+        var Amount = $.trim($('#Amount').val());
+
+
+        // Check if empty of not
+        if (AccountHolder == '' || AccountNo == '' || ConfirmAccountNo == '' || IFSC == '' || Amount == '')
+        {
+            $("#invalidInput").text("Please fill all the fields");
+            return false;
+        }
+
+         //check password match
+      else  if (AccountNo != ConfirmAccountNo)
+        {
+            
+            $('#invalidInput').text("Account Number mismatch");
+            return false;
+        }
+        else
+        return true;
+    });
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+      
+
+</script>

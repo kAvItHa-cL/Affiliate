@@ -1,0 +1,142 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/Content/img/favicon.ico">
+    <!-- Bootstrap core CSS     -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/paper-dashboard.css" rel="stylesheet" />
+
+
+</head>
+<body class="bg" style="background-image:url(../Content/img/signin.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-12">
+                <div id="register">
+                    <div class="text-center"><img src="~/Content/img/logo.png" alt="Image" data-retina="true" width="70" height="70"></div>
+                    <hr>
+
+                    <form method="post" name="registerForm">
+
+
+                        <div class="form-group">
+                            <label style="color:red;" id="invalidInput"></label>
+                        </div>
+
+                        @if (ViewBag.Error != null)
+                        {
+                            <div class="form-group">
+                                <label style="color:red;">@ViewBag.Error</label>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label>Fullname</label>
+                            <input type="text" class=" form-control" id="FullName" name="Fullname" placeholder="Fullname" style="border: 1px solid #ccc;background-color:white;" onkeydown="return ((event.keyCode >= 65 && event.keyCode <= 120) || (event.keyCode == 32) || (event.keyCode == 8) || (event.keyCode == 9) || (event.keyCode == 37) || (event.keyCode == 38) || (event.keyCode == 39)); ">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class=" form-control" id="EmailId" name="EmailId" placeholder="Email" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div class="form-group">
+                            <label>PhoneNo</label>
+                            <input type="text" class=" form-control" id="PhoneNo" name="PhoneNo" maxlength="10" placeholder="PhoneNo" style="border: 1px solid #ccc;background-color:white;" onkeypress="return isNumber(event)">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class=" form-control" id="Password" name="Password" placeholder="Password" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm password</label>
+                            <input type="password" class=" form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm password" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div id="pass-info" class="clearfix"></div>
+                        <center>
+                            <input type="submit" class="btn btn-info btn-fill btn-wd" value="Sign Up" style="background-color:#ed1c24;border:none;" />
+                            <br /><br /> <p class="sm-p">
+                                already registered..?
+                                @Html.ActionLink("Sign In", "SignIn", "Login", null, new { @class = "btn_full_outline" })
+                            </p>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Content/js/validations.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        $('form').submit(function () {
+            // Get the Login Name value and trim it
+            var name = $.trim($('#FullName').val());
+            var email = $.trim($('#EmailId').val());
+            var phone = $.trim($('#PhoneNo').val());
+            var pwd1 = $.trim($('#Password').val());
+            var pwd2 = $.trim($('#ConfirmPassword').val());
+
+            // Check if empty of not
+            if (name === '' || email === '' || pwd1 === '' || phone == '') {
+                //$("#invalidInput").css("display", "block");
+                //$("#mismatch").css("display", "none");
+                $("#invalidInput").text("Please fill all the fields").css("color", "red");
+                return false;
+
+            }
+
+            var response = validateEmail(email);
+            if (response == false) {
+                $("#invalidInput").text("Invalid Email Address").css("color", "red");
+                return false;
+            }
+           
+            var IndNum = /^[0]?[6789]\d{9}$/;
+            if (!IndNum.test(phone)) {
+                $('#invalidInput').text("Invalid Mobile Number").css("color", "red");
+                return false;
+            }
+            if (pwd1 != pwd2) {
+                //$("#invalidInput").css("display", "none");
+                //$("#mismatch").css("display", "block");
+                $("#invalidInput").text("Password Mismatch").css("color", "red");
+                return false;
+            }
+
+           
+            return true;
+        });
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        //function lettersOnly(evt) {
+        //    evt = (evt) ? evt : event;
+        //    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+        //        ((evt.which) ? evt.which : 0));
+        //    if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+        //        (charCode < 97 || charCode > 122)) {
+        //        return false;
+        //    }
+        //    return true;
+        //}
+        function lettersOnly(event) {
+            return ((event.keyCode >= 65 && event.keyCode <= 120) || (event.keyCode == 32) || (event.keyCode == 8) || (event.keyCode == 9) || (event.keyCode == 37) || (event.keyCode == 38) || (event.keyCode == 39)); "
+        }
+    </script>
+
+
+</body>
+
+</html>

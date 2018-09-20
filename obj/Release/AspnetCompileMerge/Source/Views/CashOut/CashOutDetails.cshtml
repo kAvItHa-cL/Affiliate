@@ -1,0 +1,50 @@
+﻿@model List<EEAffiliate.AffiliateCashOut>
+@{
+    ViewBag.Title = "CashOutDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CashOutDetails</h2>
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">CashOut Details</h4>
+                        <p class="category">Here is your Transactions</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                            <th>CashOutId</th>
+                            <th>AccountHolder</th>
+                            <th>AccountNo</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>@item.CashOutId</td>
+                                    <td>@item.AccountHolder</td>
+                                    <td>@item.AccountNo</td>
+                                    <td>@item.Amount</td>
+                                    <td>@item.Date</td>
+                                </tr>
+                                }
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

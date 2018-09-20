@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "CashOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Fill the Form Below</h4>
+                    </div>
+                    <div class="content">
+                        <form name="ContactForm" method="post">
+                            <div class="form-group">
+                                <label style="color:red;display:none;font-size:20px;font-weight:600" id="invalidInput">Please write a Message</label>
+                            </div>
+                            @if (ViewBag.Message != null)
+                            {
+                                <div class="form-group">
+                                    <label style="color:forestgreen;font-size:20px;font-weight:600" id="valid">@ViewBag.Message</label>
+                                </div>
+                            }
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea rows="5" class="form-control border-input" id="Message" name="Message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" id="Submit" class="btn btn-info btn-fill btn-wd">Submit</button>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+@*<script type="text/javascript">
+       $(document).ready(function () {
+           $("#Submit").click(function () {
+               $.ajax({
+                   url: "/Contactus/SaveContact",
+                   type: "POST",
+                   data: {
+
+
+                       Message: $("#Message").val()
+
+                   },
+                   dataType: "json",
+                   success: successFunc,
+                   error: errorFunc,
+               });
+               function successFunc(data, status) {
+                   alert("ready to submit");
+               }
+
+               function errorFunc() {
+                   alert('CashOut success');
+               }
+
+           });
+       });
+    </script>*@
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    $('form').submit(function () {
+        // Get the Login Name value and trim it
+        var message = $.trim($('#Message').val());
+        
+       
+        // Check if empty of not
+        if (message  == '') {
+            $("#invalidInput").css("display", "block");
+             return false;
+        }
+        return true;
+    });
+</script>

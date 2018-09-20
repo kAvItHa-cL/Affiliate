@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Wallet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="card">
+                    <div class="header text-center">
+                        <h3 class="title">Commission On Sale</h3><br /><br />
+                        @*<p class="category"><i class="fa fa-money" style="font-size:48px;color:red"></i> </p>*@
+                        <p class="category"><i class="fa fa-rupee" style="font-size:88px;color:red"></i> </p>
+                        <p class="category" style="font-size:90px;">@ViewBag.Wallet</p>
+                        <br>
+                    </div>
+                    <div class="content table-responsive table-full-width table-upgrade">
+
+                        <center>
+                            <a target="_blank" href="@Url.Action("CashOut","Cashout")" class="btn btn-round btn-fill btn-info">Cash Out</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

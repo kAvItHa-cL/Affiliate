@@ -1,0 +1,116 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<html>
+<head>
+    <!-- Bootstrap core CSS     -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/paper-dashboard.css" rel="stylesheet" />
+
+
+</head>
+<body class="bg" style="background-image:url(../Content/img/signin.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-12">
+                <div id="register">
+                    <div class="text-center"><img src="~/Content/img/logo.png" alt="Image" data-retina="true" width="85%"></div>
+                    <hr>
+                    <!--  <form>
+                          <div class="row">
+                              <div class="col-md-6 col-sm-6 login_social">
+                                  <a href="#" class="btn btn-primary btn-block"><i class="icon-facebook"></i> Facebook</a>
+                              </div>
+                              <div class="col-md-6 col-sm-6 login_social">
+                                  <a href="#" class="btn btn-info btn-block "><i class="icon-google"></i>Google+</a>
+                              </div>
+                          </div>
+                          <div class="login-or"><hr class="hr-or"><span class="span-or">or</span></div>
+                        end row -->
+                    <form method="post" name="registerForm">
+                        <!--<div class="row">
+                                                            <div class="col-md-6 col-sm-6 login_social">
+                                                                <a href="#" class="btn btn-primary btn-block"><i class="icon-facebook"></i> Facebook</a>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 login_social">
+                                                                <a href="#" class="btn btn-info btn-block "><i class="icon-google"></i>Google+</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="login-or"><hr class="hr-or"><span class="span-or">or</span></div>
+                        end row -->
+
+                        <div class="form-group">
+                            <label style="color:red;display:none;" id="invalidInput">Invalid inputs, Please try again!</label>
+                        </div>
+                        <div class="form-group">
+                            <label style="color:red;display:none;" id="mismatch">Password mismatch, Please try again!</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Fullname</label>
+                            <input type="text" class=" form-control" id="FullName" name="Fullname" placeholder="Fullname" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class=" form-control" id="EmailId" name="EmailId" placeholder="Email" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class=" form-control" id="Password" name="Password" placeholder="Password" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm password</label>
+                            <input type="password" class=" form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm password" style="border: 1px solid #ccc;background-color:white;">
+                        </div>
+                        <div id="pass-info" class="clearfix"></div>
+                        @* @Html.ActionLink("Register", "Register", "Register", null, new { @class = "btn_full" })*@
+                        <center>
+                            <input type="submit" id="Submit" class="btn btn-info btn-fill btn-wd" value="Sign Up" onclick="return validateRegister()" style="background-color:#ed1c24;border:none;" />
+                            <br /><br /> <p class="sm-p">
+                                already registered..?
+                                @Html.ActionLink("Sign In", "SignIn", "Login", null, new { @class = "btn_full_outline" })
+                            </p>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+$(document).ready(function () {
+       $("#Submit").click(function () {
+           $.ajax({
+               url: "/Register/SignUp",
+               type: "POST",
+               data: {
+
+                   FullName: $("#FullName").val(),
+                   EmailId: $("#EmailId").val(),
+                   Password: $("#Password").val(),
+                   ConfirmPassword: $("#ConfirmPassword").val(),
+
+               },
+               dataType: "'application/json",
+               success: successFunc,
+               error: errorFunc,
+           });
+           function successFunc(data, status) {
+               alert("ready to submit");
+           }
+
+           function errorFunc() {
+               alert('Error');
+           }
+
+       });
+   });
+
+
+</script>

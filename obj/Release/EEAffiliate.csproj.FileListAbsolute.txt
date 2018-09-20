@@ -1,0 +1,433 @@
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\MVC Aff\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojResolveAssemblyReference.cache
+D:\MVC Aff\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\MVC Aff\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\MVC Aff\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\May 5 EE\May 5 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\May 10 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\May 10 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\May 10 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\May 10 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\May 10 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\May 28 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\June 2 EE\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\june 4\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\June 9 EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\June 13th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\ApplicationInsights.config
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll.config
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EEAffiliate.pdb
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Agent.Intercept.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.Web.Infrastructure.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\WebGrease.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.pdb
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\BitlyAPI.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\EntityFramework.SqlServer.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Helpers.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Mvc.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Optimization.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.Razor.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Deployment.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\System.Web.WebPages.Razor.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Antlr3.Runtime.pdb
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Newtonsoft.Json.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.ApplicationInsights.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.DependencyCollector.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.WindowsServer.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\bin\Microsoft.AI.Web.xml
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csprojAssemblyReference.cache
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CoreCompileInputs.cache
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.csproj.CopyComplete
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.dll
+D:\EEAffiliateprog\June 14th EEA\EEAffiliate\EEAffiliate\obj\Release\EEAffiliate.pdb

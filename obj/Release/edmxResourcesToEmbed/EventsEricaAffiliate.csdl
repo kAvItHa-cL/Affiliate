@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GtTestEEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminBooking">
+    <Key>
+      <PropertyRef Name="BookingId" />
+    </Key>
+    <Property Name="BookingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TicketsBooked" Type="Int32" />
+    <Property Name="TicketPrice" Type="Int32" />
+    <Property Name="TotalAmount" Type="Int32" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__AdminBook__Event__534D60F1" FromRole="AdminBookings" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__AdminBook__Usern__52593CB8" FromRole="AdminBookings" ToRole="OrganiserRegister" />
+    <NavigationProperty Name="AdminPayments" Relationship="Self.FK__AdminPaym__Booki__571DF1D5" FromRole="AdminBookings" ToRole="AdminPayments" />
+  </EntityType>
+  <EntityType Name="AdminFeedback">
+    <Key>
+      <PropertyRef Name="FeedbackId" />
+    </Key>
+    <Property Name="FeedbackId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__AdminFeed__Usern__59FA5E80" FromRole="AdminFeedback" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="AdminLogin">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AdminPayment">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Name="PaymentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BookingId" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="Int32" />
+    <Property Name="TransactionId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AdminBooking" Relationship="Self.FK__AdminPaym__Booki__571DF1D5" FromRole="AdminPayments" ToRole="AdminBookings" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__AdminPaym__Usern__5629CD9C" FromRole="AdminPayments" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="AffiliateCashOut">
+    <Key>
+      <PropertyRef Name="CashOutId" />
+    </Key>
+    <Property Name="CashOutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountHolder" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountNo" Type="Int32" Nullable="false" />
+    <Property Name="ConfrimAccountNo" Type="Int32" Nullable="false" />
+    <Property Name="IFSC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AffiliateContactU">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AffiliateRegister" Relationship="Self.FK__Affiliate__Email__3493CFA7" FromRole="AffiliateContactUs" ToRole="AffiliateRegister" />
+  </EntityType>
+  <EntityType Name="AffiliateLink">
+    <Key>
+      <PropertyRef Name="LinkId" />
+    </Key>
+    <Property Name="LinkId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AffiliateLink1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ShortURl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AffiliateRegister">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AffiliateContactUs" Relationship="Self.FK__Affiliate__Email__3493CFA7" FromRole="AffiliateRegister" ToRole="AffiliateContactUs" />
+    <NavigationProperty Name="AffiliateWallets" Relationship="Self.FK__Affiliate__Email__2739D489" FromRole="AffiliateRegister" ToRole="AffiliateWallet" />
+    <NavigationProperty Name="AffiliateUserDetails" Relationship="Self.FK__Affiliate__Email__37703C52" FromRole="AffiliateRegister" ToRole="AffiliateUserDetails" />
+  </EntityType>
+  <EntityType Name="AffiliateUserDetail">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AffiliateRegister" Relationship="Self.FK__Affiliate__Email__37703C52" FromRole="AffiliateUserDetails" ToRole="AffiliateRegister" />
+  </EntityType>
+  <EntityType Name="AffiliateWallet">
+    <Key>
+      <PropertyRef Name="WalletId" />
+    </Key>
+    <Property Name="WalletId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CommissionOnSale" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="AffiliateRegister" Relationship="Self.FK__Affiliate__Email__2739D489" FromRole="AffiliateWallet" ToRole="AffiliateRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserBankDetail">
+    <Key>
+      <PropertyRef Name="BankDetailId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BankDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountHolderName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BankName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AccountNo" Type="Int32" />
+    <Property Name="Ifsc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__47DBAE45" FromRole="OrganiserBankDetails" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserCategory">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrganiserEventCategories" Relationship="Self.FK__Organiser__Categ__02084FDA" FromRole="OrganiserCategory" ToRole="OrganiserEventCategory" />
+  </EntityType>
+  <EntityType Name="OrganiserContactu">
+    <Key>
+      <PropertyRef Name="MessageId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MessageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__4316F928" FromRole="OrganiserContactus" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserCustomer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Transact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__35BCFE0A" FromRole="OrganiserCustomer" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__34C8D9D1" FromRole="OrganiserCustomer" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserDateTime">
+    <Key>
+      <PropertyRef Name="DatetimeId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="DatetimeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartDatetime" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EndDatetime" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__276EDEB3" FromRole="OrganiserDateTime" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserDiscount">
+    <Key>
+      <PropertyRef Name="DiscountId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="DiscountId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DiscountName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StartsAt" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EndsAt" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__2B3F6F97" FromRole="OrganiserDiscount" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__2A4B4B5E" FromRole="OrganiserDiscount" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserEvent">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Displaypage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="TermsAndCondation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Schedule" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdminBookings" Relationship="Self.FK__AdminBook__Event__534D60F1" FromRole="OrganiserEvent" ToRole="AdminBookings" />
+    <NavigationProperty Name="OrganiserCustomers" Relationship="Self.FK__Organiser__Event__35BCFE0A" FromRole="OrganiserEvent" ToRole="OrganiserCustomer" />
+    <NavigationProperty Name="OrganiserDateTimes" Relationship="Self.FK__Organiser__Event__276EDEB3" FromRole="OrganiserEvent" ToRole="OrganiserDateTime" />
+    <NavigationProperty Name="OrganiserDiscounts" Relationship="Self.FK__Organiser__Event__2B3F6F97" FromRole="OrganiserEvent" ToRole="OrganiserDiscount" />
+    <NavigationProperty Name="OrganiserEventCategories" Relationship="Self.FK__Organiser__Event__01142BA1" FromRole="OrganiserEvent" ToRole="OrganiserEventCategory" />
+    <NavigationProperty Name="OrganiserVenues" Relationship="Self.FK__Organiser__Event__1CF15040" FromRole="OrganiserEvent" ToRole="OrganiserVenue" />
+    <NavigationProperty Name="OrganiserTaxes" Relationship="Self.FK__Organiser__Event__2E1BDC42" FromRole="OrganiserEvent" ToRole="OrganiserTaxes" />
+    <NavigationProperty Name="OrganiserSubscriptions" Relationship="Self.FK__Organiser__Event__2EDAF651" FromRole="OrganiserEvent" ToRole="OrganiserSubscription" />
+    <NavigationProperty Name="OrganiserLeads" Relationship="Self.FK__Organiser__Event__398D8EEE" FromRole="OrganiserEvent" ToRole="OrganiserLeads" />
+    <NavigationProperty Name="OrganiserReviews" Relationship="Self.FK__Organiser__Event__3A4CA8FD" FromRole="OrganiserEvent" ToRole="OrganiserReviews" />
+    <NavigationProperty Name="OrganiserSales" Relationship="Self.FK__Organiser__Event__4F7CD00D" FromRole="OrganiserEvent" ToRole="OrganiserSales" />
+    <NavigationProperty Name="OrganiserImages" Relationship="Self.FK__Organiser__Event__7E37BEF6" FromRole="OrganiserEvent" ToRole="OrganiserImages" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__1A14E395" FromRole="OrganiserEvent" ToRole="OrganiserRegister" />
+    <NavigationProperty Name="UserLikes" Relationship="Self.FK__UserLike__EventI__6A30C649" FromRole="OrganiserEvent" ToRole="UserLike" />
+    <NavigationProperty Name="UserPhones" Relationship="Self.FK__UserPhone__Event__74AE54BC" FromRole="OrganiserEvent" ToRole="UserPhone" />
+    <NavigationProperty Name="UserShares" Relationship="Self.FK__UserShare__Event__7A672E12" FromRole="OrganiserEvent" ToRole="UserShare" />
+    <NavigationProperty Name="UserWishLists" Relationship="Self.FK__UserWishL__Event__6D0D32F4" FromRole="OrganiserEvent" ToRole="UserWishList" />
+  </EntityType>
+  <EntityType Name="OrganiserEventCategory">
+    <Key>
+      <PropertyRef Name="EventCategoryId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="EventCategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="OrganiserCategory" Relationship="Self.FK__Organiser__Categ__02084FDA" FromRole="OrganiserEventCategory" ToRole="OrganiserCategory" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__01142BA1" FromRole="OrganiserEventCategory" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserGSTDetail">
+    <Key>
+      <PropertyRef Name="BusinessName" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BusinessName" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GstNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__778AC167" FromRole="OrganiserGSTDetails" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserImage">
+    <Key>
+      <PropertyRef Name="ImageId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="ImageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ImageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__7E37BEF6" FromRole="OrganiserImages" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserLead">
+    <Key>
+      <PropertyRef Name="LeadId" />
+    </Key>
+    <Property Name="LeadId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__398D8EEE" FromRole="OrganiserLeads" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__38996AB5" FromRole="OrganiserLeads" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserRegister">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CurrentStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ActivationCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AdminBookings" Relationship="Self.FK__AdminBook__Usern__52593CB8" FromRole="OrganiserRegister" ToRole="AdminBookings" />
+    <NavigationProperty Name="AdminFeedbacks" Relationship="Self.FK__AdminFeed__Usern__59FA5E80" FromRole="OrganiserRegister" ToRole="AdminFeedback" />
+    <NavigationProperty Name="AdminPayments" Relationship="Self.FK__AdminPaym__Usern__5629CD9C" FromRole="OrganiserRegister" ToRole="AdminPayments" />
+    <NavigationProperty Name="OrganiserBankDetails" Relationship="Self.FK__Organiser__Usern__47DBAE45" FromRole="OrganiserRegister" ToRole="OrganiserBankDetails" />
+    <NavigationProperty Name="OrganiserContactus" Relationship="Self.FK__Organiser__Usern__4316F928" FromRole="OrganiserRegister" ToRole="OrganiserContactus" />
+    <NavigationProperty Name="OrganiserCustomers" Relationship="Self.FK__Organiser__Usern__34C8D9D1" FromRole="OrganiserRegister" ToRole="OrganiserCustomer" />
+    <NavigationProperty Name="OrganiserDiscounts" Relationship="Self.FK__Organiser__Usern__2A4B4B5E" FromRole="OrganiserRegister" ToRole="OrganiserDiscount" />
+    <NavigationProperty Name="OrganiserEvents" Relationship="Self.FK__Organiser__Usern__1A14E395" FromRole="OrganiserRegister" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserGSTDetails" Relationship="Self.FK__Organiser__Usern__778AC167" FromRole="OrganiserRegister" ToRole="OrganiserGSTDetails" />
+    <NavigationProperty Name="OrganiserLeads" Relationship="Self.FK__Organiser__Usern__38996AB5" FromRole="OrganiserRegister" ToRole="OrganiserLeads" />
+    <NavigationProperty Name="OrganiserTeams" Relationship="Self.FK__Organiser__Usern__173876EA" FromRole="OrganiserRegister" ToRole="OrganiserTeam" />
+    <NavigationProperty Name="OrganiserSales" Relationship="Self.FK__Organiser__Usern__4E88ABD4" FromRole="OrganiserRegister" ToRole="OrganiserSales" />
+  </EntityType>
+  <EntityType Name="OrganiserReview">
+    <Key>
+      <PropertyRef Name="ReviewId" />
+    </Key>
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReviewId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Review" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Rating" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__3A4CA8FD" FromRole="OrganiserReviews" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserSale">
+    <Key>
+      <PropertyRef Name="TicketId" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="TicketId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TicketSold" Type="Int32" Nullable="false" />
+    <Property Name="Sales" Type="Int32" />
+    <Property Name="Commission" Type="Int32" />
+    <Property Name="Earnings" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__4F7CD00D" FromRole="OrganiserSales" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__4E88ABD4" FromRole="OrganiserSales" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserSubscription">
+    <Key>
+      <PropertyRef Name="SubscribeId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="SubscribeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__2EDAF651" FromRole="OrganiserSubscription" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserTax">
+    <Key>
+      <PropertyRef Name="TaxId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="TaxId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tax" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__2E1BDC42" FromRole="OrganiserTaxes" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="OrganiserTeam">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserRegister" Relationship="Self.FK__Organiser__Usern__173876EA" FromRole="OrganiserTeam" ToRole="OrganiserRegister" />
+  </EntityType>
+  <EntityType Name="OrganiserVenue">
+    <Key>
+      <PropertyRef Name="TicketId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TicketId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TicketName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TicketPrice" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Discounts" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__Organiser__Event__1CF15040" FromRole="OrganiserVenue" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="UserContact">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserCorporate">
+    <Key>
+      <PropertyRef Name="CorporateId" />
+    </Key>
+    <Property Name="CorporateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TeamSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserLike">
+    <Key>
+      <PropertyRef Name="LikeId" />
+    </Key>
+    <Property Name="LikeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__UserLike__EventI__6A30C649" FromRole="UserLike" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="UserRegister" Relationship="Self.FK__UserLike__EmailI__693CA210" FromRole="UserLike" ToRole="UserRegister" />
+  </EntityType>
+  <EntityType Name="UserPhone">
+    <Key>
+      <PropertyRef Name="PhoneId" />
+    </Key>
+    <Property Name="PhoneId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__UserPhone__Event__74AE54BC" FromRole="UserPhone" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="UserRegister">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="UserLikes" Relationship="Self.FK__UserLike__EmailI__693CA210" FromRole="UserRegister" ToRole="UserLike" />
+    <NavigationProperty Name="UserReviews" Relationship="Self.FK__UserRevie__Email__66603565" FromRole="UserRegister" ToRole="UserReview" />
+    <NavigationProperty Name="UserWishLists" Relationship="Self.FK__UserWishL__Email__6E01572D" FromRole="UserRegister" ToRole="UserWishList" />
+  </EntityType>
+  <EntityType Name="UserReview">
+    <Key>
+      <PropertyRef Name="ReviewId" />
+    </Key>
+    <Property Name="ReviewId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Star" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="UserRegister" Relationship="Self.FK__UserRevie__Email__66603565" FromRole="UserReview" ToRole="UserRegister" />
+  </EntityType>
+  <EntityType Name="UserShare">
+    <Key>
+      <PropertyRef Name="ShareId" />
+    </Key>
+    <Property Name="ShareId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__UserShare__Event__7A672E12" FromRole="UserShare" ToRole="OrganiserEvent" />
+  </EntityType>
+  <EntityType Name="UserSubscribe">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserWishList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventId" Type="Int32" Nullable="false" />
+    <Property Name="EmailId" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OrganiserEvent" Relationship="Self.FK__UserWishL__Event__6D0D32F4" FromRole="UserWishList" ToRole="OrganiserEvent" />
+    <NavigationProperty Name="UserRegister" Relationship="Self.FK__UserWishL__Email__6E01572D" FromRole="UserWishList" ToRole="UserRegister" />
+  </EntityType>
+  <Association Name="FK__AdminBook__Event__534D60F1">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="AdminBookings" Type="Self.AdminBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="AdminBookings">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AdminBook__Usern__52593CB8">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="AdminBookings" Type="Self.AdminBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="AdminBookings">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AdminPaym__Booki__571DF1D5">
+    <End Role="AdminBookings" Type="Self.AdminBooking" Multiplicity="1" />
+    <End Role="AdminPayments" Type="Self.AdminPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdminBookings">
+        <PropertyRef Name="BookingId" />
+      </Principal>
+      <Dependent Role="AdminPayments">
+        <PropertyRef Name="BookingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AdminFeed__Usern__59FA5E80">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="AdminFeedback" Type="Self.AdminFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="AdminFeedback">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AdminPaym__Usern__5629CD9C">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="AdminPayments" Type="Self.AdminPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="AdminPayments">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Affiliate__Email__3493CFA7">
+    <End Role="AffiliateRegister" Type="Self.AffiliateRegister" Multiplicity="1" />
+    <End Role="AffiliateContactUs" Type="Self.AffiliateContactU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AffiliateRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="AffiliateContactUs">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Affiliate__Email__2739D489">
+    <End Role="AffiliateRegister" Type="Self.AffiliateRegister" Multiplicity="1" />
+    <End Role="AffiliateWallet" Type="Self.AffiliateWallet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AffiliateRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="AffiliateWallet">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Affiliate__Email__37703C52">
+    <End Role="AffiliateRegister" Type="Self.AffiliateRegister" Multiplicity="1" />
+    <End Role="AffiliateUserDetails" Type="Self.AffiliateUserDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AffiliateRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="AffiliateUserDetails">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__47DBAE45">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserBankDetails" Type="Self.OrganiserBankDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserBankDetails">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Categ__02084FDA">
+    <End Role="OrganiserCategory" Type="Self.OrganiserCategory" Multiplicity="1" />
+    <End Role="OrganiserEventCategory" Type="Self.OrganiserEventCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserCategory">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="OrganiserEventCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__4316F928">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserContactus" Type="Self.OrganiserContactu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserContactus">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__35BCFE0A">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserCustomer" Type="Self.OrganiserCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserCustomer">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__34C8D9D1">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserCustomer" Type="Self.OrganiserCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserCustomer">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__276EDEB3">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserDateTime" Type="Self.OrganiserDateTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserDateTime">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__2B3F6F97">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserDiscount" Type="Self.OrganiserDiscount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserDiscount">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__2A4B4B5E">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserDiscount" Type="Self.OrganiserDiscount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserDiscount">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__01142BA1">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserEventCategory" Type="Self.OrganiserEventCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserEventCategory">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__1CF15040">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserVenue" Type="Self.OrganiserVenue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserVenue">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__2E1BDC42">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserTaxes" Type="Self.OrganiserTax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserTaxes">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__2EDAF651">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserSubscription" Type="Self.OrganiserSubscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserSubscription">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__398D8EEE">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserLeads" Type="Self.OrganiserLead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserLeads">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__3A4CA8FD">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserReviews" Type="Self.OrganiserReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserReviews">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__4F7CD00D">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserSales" Type="Self.OrganiserSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserSales">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Event__7E37BEF6">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="OrganiserImages" Type="Self.OrganiserImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="OrganiserImages">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__1A14E395">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserEvent">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserLike__EventI__6A30C649">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="UserLike" Type="Self.UserLike" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="UserLike">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserPhone__Event__74AE54BC">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="UserPhone" Type="Self.UserPhone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="UserPhone">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserShare__Event__7A672E12">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="UserShare" Type="Self.UserShare" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="UserShare">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserWishL__Event__6D0D32F4">
+    <End Role="OrganiserEvent" Type="Self.OrganiserEvent" Multiplicity="1" />
+    <End Role="UserWishList" Type="Self.UserWishList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserEvent">
+        <PropertyRef Name="EventId" />
+      </Principal>
+      <Dependent Role="UserWishList">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__778AC167">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserGSTDetails" Type="Self.OrganiserGSTDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserGSTDetails">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__38996AB5">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserLeads" Type="Self.OrganiserLead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserLeads">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__173876EA">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserTeam" Type="Self.OrganiserTeam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserTeam">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Organiser__Usern__4E88ABD4">
+    <End Role="OrganiserRegister" Type="Self.OrganiserRegister" Multiplicity="1" />
+    <End Role="OrganiserSales" Type="Self.OrganiserSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrganiserRegister">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="OrganiserSales">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserLike__EmailI__693CA210">
+    <End Role="UserRegister" Type="Self.UserRegister" Multiplicity="1" />
+    <End Role="UserLike" Type="Self.UserLike" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="UserLike">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserRevie__Email__66603565">
+    <End Role="UserRegister" Type="Self.UserRegister" Multiplicity="1" />
+    <End Role="UserReview" Type="Self.UserReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="UserReview">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserWishL__Email__6E01572D">
+    <End Role="UserRegister" Type="Self.UserRegister" Multiplicity="1" />
+    <End Role="UserWishList" Type="Self.UserWishList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRegister">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="UserWishList">
+        <PropertyRef Name="EmailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GtTestEEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminBookings" EntityType="Self.AdminBooking" />
+    <EntitySet Name="AdminFeedbacks" EntityType="Self.AdminFeedback" />
+    <EntitySet Name="AdminLogins" EntityType="Self.AdminLogin" />
+    <EntitySet Name="AdminPayments" EntityType="Self.AdminPayment" />
+    <EntitySet Name="AffiliateCashOuts" EntityType="Self.AffiliateCashOut" />
+    <EntitySet Name="AffiliateContactUs" EntityType="Self.AffiliateContactU" />
+    <EntitySet Name="AffiliateLinks" EntityType="Self.AffiliateLink" />
+    <EntitySet Name="AffiliateRegisters" EntityType="Self.AffiliateRegister" />
+    <EntitySet Name="AffiliateUserDetails" EntityType="Self.AffiliateUserDetail" />
+    <EntitySet Name="AffiliateWallets" EntityType="Self.AffiliateWallet" />
+    <EntitySet Name="OrganiserBankDetails" EntityType="Self.OrganiserBankDetail" />
+    <EntitySet Name="OrganiserCategories" EntityType="Self.OrganiserCategory" />
+    <EntitySet Name="OrganiserContactus" EntityType="Self.OrganiserContactu" />
+    <EntitySet Name="OrganiserCustomers" EntityType="Self.OrganiserCustomer" />
+    <EntitySet Name="OrganiserDateTimes" EntityType="Self.OrganiserDateTime" />
+    <EntitySet Name="OrganiserDiscounts" EntityType="Self.OrganiserDiscount" />
+    <EntitySet Name="OrganiserEvents" EntityType="Self.OrganiserEvent" />
+    <EntitySet Name="OrganiserEventCategories" EntityType="Self.OrganiserEventCategory" />
+    <EntitySet Name="OrganiserGSTDetails" EntityType="Self.OrganiserGSTDetail" />
+    <EntitySet Name="OrganiserImages" EntityType="Self.OrganiserImage" />
+    <EntitySet Name="OrganiserLeads" EntityType="Self.OrganiserLead" />
+    <EntitySet Name="OrganiserRegisters" EntityType="Self.OrganiserRegister" />
+    <EntitySet Name="OrganiserReviews" EntityType="Self.OrganiserReview" />
+    <EntitySet Name="OrganiserSales" EntityType="Self.OrganiserSale" />
+    <EntitySet Name="OrganiserSubscriptions" EntityType="Self.OrganiserSubscription" />
+    <EntitySet Name="OrganiserTaxes" EntityType="Self.OrganiserTax" />
+    <EntitySet Name="OrganiserTeams" EntityType="Self.OrganiserTeam" />
+    <EntitySet Name="OrganiserVenues" EntityType="Self.OrganiserVenue" />
+    <EntitySet Name="UserContacts" EntityType="Self.UserContact" />
+    <EntitySet Name="UserCorporates" EntityType="Self.UserCorporate" />
+    <EntitySet Name="UserLikes" EntityType="Self.UserLike" />
+    <EntitySet Name="UserPhones" EntityType="Self.UserPhone" />
+    <EntitySet Name="UserRegisters" EntityType="Self.UserRegister" />
+    <EntitySet Name="UserReviews" EntityType="Self.UserReview" />
+    <EntitySet Name="UserShares" EntityType="Self.UserShare" />
+    <EntitySet Name="UserSubscribes" EntityType="Self.UserSubscribe" />
+    <EntitySet Name="UserWishLists" EntityType="Self.UserWishList" />
+    <AssociationSet Name="FK__AdminBook__Event__534D60F1" Association="Self.FK__AdminBook__Event__534D60F1">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="AdminBookings" EntitySet="AdminBookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AdminBook__Usern__52593CB8" Association="Self.FK__AdminBook__Usern__52593CB8">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="AdminBookings" EntitySet="AdminBookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AdminPaym__Booki__571DF1D5" Association="Self.FK__AdminPaym__Booki__571DF1D5">
+      <End Role="AdminBookings" EntitySet="AdminBookings" />
+      <End Role="AdminPayments" EntitySet="AdminPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AdminFeed__Usern__59FA5E80" Association="Self.FK__AdminFeed__Usern__59FA5E80">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="AdminFeedback" EntitySet="AdminFeedbacks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AdminPaym__Usern__5629CD9C" Association="Self.FK__AdminPaym__Usern__5629CD9C">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="AdminPayments" EntitySet="AdminPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Affiliate__Email__3493CFA7" Association="Self.FK__Affiliate__Email__3493CFA7">
+      <End Role="AffiliateRegister" EntitySet="AffiliateRegisters" />
+      <End Role="AffiliateContactUs" EntitySet="AffiliateContactUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Affiliate__Email__2739D489" Association="Self.FK__Affiliate__Email__2739D489">
+      <End Role="AffiliateRegister" EntitySet="AffiliateRegisters" />
+      <End Role="AffiliateWallet" EntitySet="AffiliateWallets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Affiliate__Email__37703C52" Association="Self.FK__Affiliate__Email__37703C52">
+      <End Role="AffiliateRegister" EntitySet="AffiliateRegisters" />
+      <End Role="AffiliateUserDetails" EntitySet="AffiliateUserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__47DBAE45" Association="Self.FK__Organiser__Usern__47DBAE45">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserBankDetails" EntitySet="OrganiserBankDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Categ__02084FDA" Association="Self.FK__Organiser__Categ__02084FDA">
+      <End Role="OrganiserCategory" EntitySet="OrganiserCategories" />
+      <End Role="OrganiserEventCategory" EntitySet="OrganiserEventCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__4316F928" Association="Self.FK__Organiser__Usern__4316F928">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserContactus" EntitySet="OrganiserContactus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__35BCFE0A" Association="Self.FK__Organiser__Event__35BCFE0A">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserCustomer" EntitySet="OrganiserCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__34C8D9D1" Association="Self.FK__Organiser__Usern__34C8D9D1">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserCustomer" EntitySet="OrganiserCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__276EDEB3" Association="Self.FK__Organiser__Event__276EDEB3">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserDateTime" EntitySet="OrganiserDateTimes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__2B3F6F97" Association="Self.FK__Organiser__Event__2B3F6F97">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserDiscount" EntitySet="OrganiserDiscounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__2A4B4B5E" Association="Self.FK__Organiser__Usern__2A4B4B5E">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserDiscount" EntitySet="OrganiserDiscounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__01142BA1" Association="Self.FK__Organiser__Event__01142BA1">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserEventCategory" EntitySet="OrganiserEventCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__1CF15040" Association="Self.FK__Organiser__Event__1CF15040">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserVenue" EntitySet="OrganiserVenues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__2E1BDC42" Association="Self.FK__Organiser__Event__2E1BDC42">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserTaxes" EntitySet="OrganiserTaxes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__2EDAF651" Association="Self.FK__Organiser__Event__2EDAF651">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserSubscription" EntitySet="OrganiserSubscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__398D8EEE" Association="Self.FK__Organiser__Event__398D8EEE">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserLeads" EntitySet="OrganiserLeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__3A4CA8FD" Association="Self.FK__Organiser__Event__3A4CA8FD">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserReviews" EntitySet="OrganiserReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__4F7CD00D" Association="Self.FK__Organiser__Event__4F7CD00D">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserSales" EntitySet="OrganiserSales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Event__7E37BEF6" Association="Self.FK__Organiser__Event__7E37BEF6">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="OrganiserImages" EntitySet="OrganiserImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__1A14E395" Association="Self.FK__Organiser__Usern__1A14E395">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserLike__EventI__6A30C649" Association="Self.FK__UserLike__EventI__6A30C649">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="UserLike" EntitySet="UserLikes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserPhone__Event__74AE54BC" Association="Self.FK__UserPhone__Event__74AE54BC">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="UserPhone" EntitySet="UserPhones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserShare__Event__7A672E12" Association="Self.FK__UserShare__Event__7A672E12">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="UserShare" EntitySet="UserShares" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserWishL__Event__6D0D32F4" Association="Self.FK__UserWishL__Event__6D0D32F4">
+      <End Role="OrganiserEvent" EntitySet="OrganiserEvents" />
+      <End Role="UserWishList" EntitySet="UserWishLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__778AC167" Association="Self.FK__Organiser__Usern__778AC167">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserGSTDetails" EntitySet="OrganiserGSTDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__38996AB5" Association="Self.FK__Organiser__Usern__38996AB5">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserLeads" EntitySet="OrganiserLeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__173876EA" Association="Self.FK__Organiser__Usern__173876EA">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserTeam" EntitySet="OrganiserTeams" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Organiser__Usern__4E88ABD4" Association="Self.FK__Organiser__Usern__4E88ABD4">
+      <End Role="OrganiserRegister" EntitySet="OrganiserRegisters" />
+      <End Role="OrganiserSales" EntitySet="OrganiserSales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserLike__EmailI__693CA210" Association="Self.FK__UserLike__EmailI__693CA210">
+      <End Role="UserRegister" EntitySet="UserRegisters" />
+      <End Role="UserLike" EntitySet="UserLikes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserRevie__Email__66603565" Association="Self.FK__UserRevie__Email__66603565">
+      <End Role="UserRegister" EntitySet="UserRegisters" />
+      <End Role="UserReview" EntitySet="UserReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserWishL__Email__6E01572D" Association="Self.FK__UserWishL__Email__6E01572D">
+      <End Role="UserRegister" EntitySet="UserRegisters" />
+      <End Role="UserWishList" EntitySet="UserWishLists" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

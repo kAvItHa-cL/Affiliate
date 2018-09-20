@@ -1,0 +1,311 @@
+﻿
+@{
+    ViewBag.Title = "Settings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="smenu">
+    <div class="menu">
+        <div class="row" style="padding-left:20px;padding-top:20px;">
+            <div class="col-lg-32 col-sm-62">
+                <div class="card" id="card1">
+                    <div class="content">
+                        <div class="row">
+                            <!-- <div class="col-xs-5"> -->
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="col-xs-7"> -->
+                            <!-- <div class="numbers"> -->
+                            <center>
+                                <a id="setting1" onclick="return showLinks();" class="settings sm-settings" style="cursor:pointer;">
+                                    <div class="icon-big icon-warning text-center" style="font-size:2em;">
+                                        <i class="ti-server"></i>
+                                    </div>
+                                    Affiliate Links
+                                </a>
+                            </center>
+
+                            <!-- </div> -->
+                            <!-- </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-32 col-sm-62" style="width:32.5%;">
+                <div class="card" id="card2">
+                    <div class="content">
+                        <div class="row">
+                            <!-- <div class="col-xs-5"> -->
+                            <!-- <div class="icon-big icon-success text-center" style="font-size:2em;"> -->
+                            <!-- <i class="ti-wallet"></i> -->
+                            <!-- <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="col-xs-7"> -->
+                            <!-- <div class="numbers"> -->
+                            <center>
+                                <a id="setting2" onclick="return showReset();" class="settings sm-settings" style="cursor:pointer;">
+                                    <div class="icon-big icon-success text-center" style="font-size:2em;">
+                                        <i class="ti-wallet"></i>
+                                    </div>Reset Password
+                                </a>
+                            </center>
+
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                        <div class="footer">
+                            <!-- <hr /> -->
+                            <!-- <div class="stats"> -->
+                            <!-- <i class="ti-calendar"></i> Last day -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-32 col-sm-62" style="width:32.5%;">
+                <div class="card" id="card3">
+                    <div class="content">
+                        <div class="row">
+                            <!-- <div class="col-xs-5"> -->
+                            <!-- </div> -->
+                            <!-- <div class="col-xs-7"> -->
+                            <!-- <div class="numbers"> -->
+                            <center>
+                                <a id="setting3" onclick="return showDetails();" class="settings sm-settings" style="cursor:pointer;">
+                                    <div class="icon-big icon-danger text-center" style="font-size:2em;">
+                                        <i class="fa fa-percent"></i>
+                                    </div>
+                                    User Details
+                                </a>
+                            </center>
+
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content" style="padding-top:3px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-7" style="padding-left:9%; width: 92.666667%;">
+                <div class="card" id="links">
+                    <div class="header">
+                        <h4 class="title">Affiliate Links</h4>
+                    </div>
+                    <div class="content">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Link</label>
+                                    <input type="text" class="form-control border-input" placeholder="Affiliate URL">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Short URL</label>
+                                    <input type="text" class="form-control border-input" placeholder="Tiny URL">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" id="GenerateLink" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+                <div class="card" id="reset">
+                    <div class="header">
+                        <h4 class="title">Reset Password</h4>
+                    </div>
+                    <div class="content">
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Current Password</label>
+                                    <input type="text" id="CurrentPassword" name="CurrentPassword" class="form-control border-input" placeholder="Current Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>New Password</label>
+                                    <input type="text" id="NewPassword" name="NewPassword" class="form-control border-input" placeholder="New Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input type="text" id="ConfirmPassword" name="ConfirmPassword" class="form-control border-input" placeholder="Confrim Password">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="text-center">
+                            <button type="submit" id="ResetSubmit" class="btn btn-info btn-fill btn-wd">Update</button>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+
+                <div class="card" id="details">
+                    <div class="header">
+                        <h4 class="title">User Details</h4>
+                    </div>
+                    <div class="content">
+
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control border-input" placeholder="User Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <select class="form-control border-input" name="Gender" id="Gender">
+                                        <option selected="" hidden="">Select</option>
+                                        <option value="Day Trek">Female</option>
+                                        <option value="Night Trek">Male</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control border-input" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Phone No</label>
+                                    <input type="text" class="form-control border-input" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" class="form-control border-input" placeholder="City">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text-center">
+                            <button type="submit" id="UpdateUser" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        showLinks();
+    };
+
+
+    function showLinks() {
+        var x = document.getElementById("details");
+        var y = document.getElementById("reset");
+        var z = document.getElementById("links");
+        var card = document.getElementById("card1");
+
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+
+
+    }
+    function showReset() {
+        var x = document.getElementById("details");
+        var y = document.getElementById("links");
+        var z = document.getElementById("reset");
+        var card = document.getElementById("card2");
+
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+
+    }
+    function showDetails() {
+        var x = document.getElementById("reset");
+        var y = document.getElementById("links");
+        var z = document.getElementById("details");
+        var card = document.getElementById("card3");
+
+
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+
+    }
+
+</script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ResetSubmit").click(function () {
+            $.ajax({
+                url: "/Settings/ResetPassword",
+                type: "POST",
+                data: {
+
+                    CurrentPassword: $("#CurrentPassword").val(),
+                    NewPassword: $("#NewPassword").val(),
+                    ConfirmPassword: $("#ConfirmPassword").val()
+
+                },
+                dataType: "json",
+                success: function (response) {
+                   
+                    if (response == "success")
+                        alert("success");
+                    else alert("Error");   
+                        }
+            });
+            
+
+        });
+    });
+
+
+</script>
